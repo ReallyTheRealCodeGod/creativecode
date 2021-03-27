@@ -13,7 +13,7 @@ class beatBox {
         this.offsetY = 0;
         this.beatsPerMin = 0;
         this.ready = false;
-        this.tone = new Tone();
+        this.tone = Tone;
         this.bass = new Tone.MembraneSynth();
         this.bass.connect(this.tone.Master);
         this.loopBeat;
